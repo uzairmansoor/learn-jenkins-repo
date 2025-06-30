@@ -57,7 +57,7 @@ pipeline {
               ls -la
               cd /home/ubuntu/
               ls -la
-              git clone -b main https://github.com/uzairmansoor/learn-jenkins-repo.git
+              git clone https://github.com/uzairmansoor/learn-jenkins-repo.git
               cd learn-jenkins-repo
               apt-get update -y && apt-get install apache2 -y
             '
