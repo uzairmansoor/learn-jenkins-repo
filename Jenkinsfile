@@ -1,4 +1,4 @@
-// Jenkinsfile for deploying a static website on S3 bucket
+// Jenkinsfile for deploying a static website on S3 bucket //
 // pipeline {
 //      agent any
 //      stages {
@@ -22,7 +22,7 @@
 //      }
 // }
 
-//  Jenkinsfile to deploy static website on EC2 instance
+//  Jenkinsfile to deploy static website on EC2 instance //
 
 pipeline {
   agent any
