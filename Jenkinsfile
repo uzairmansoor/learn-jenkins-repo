@@ -61,7 +61,7 @@ pipeline {
               cd learn-jenkins-repo
               sudo apt-get update -y
               sudo apt-get install apache2 -y
-              cp /home/ubuntu/learn-jenkins-repo/index.html /var/www/html/
+              sudo cp /home/ubuntu/learn-jenkins-repo/index.html /var/www/html/
             '
           """
         }
