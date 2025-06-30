@@ -36,7 +36,7 @@ pipeline {
   stages {
     stage('Clone Repo') {
       steps {
-        git 'https://github.com/uzairmansoor/learn-jenkins-repo.git'
+        git branch: 'main', url: 'https://github.com/uzairmansoor/learn-jenkins-repo.git'
       }
     }
 
@@ -46,7 +46,7 @@ pipeline {
         // sh 'npm install' or 'python setup.py install'
       }
     }
-    
+
     stage('Deploy to EC2') {
       steps {
         sshagent (credentials: ["${SSH_CRED_ID}"]) {
