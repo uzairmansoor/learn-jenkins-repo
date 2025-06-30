@@ -40,6 +40,13 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        echo 'Building the app...'
+        // sh 'npm install' or 'python setup.py install'
+      }
+    }
+    
     stage('Deploy to EC2') {
       steps {
         sshagent (credentials: ["${SSH_CRED_ID}"]) {
