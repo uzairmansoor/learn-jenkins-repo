@@ -51,8 +51,8 @@ pipeline {
       steps {
         sshagent (credentials: ["${SSH_CRED_ID}"]) {
           sh """
-            scp -o StrictHostKeyChecking=no app.zip ${EC2_USER}@${EC2_HOST}:/home/${EC2_USER}/
             ssh -o StrictHostKeyChecking=no ${EC2_USER}@${EC2_HOST} '
+              echo "Connected to Ubuntu EC2"
               ls -la
               unzip -o app.zip -d app/
               cd app && ./start.sh
