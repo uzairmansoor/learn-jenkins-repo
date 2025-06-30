@@ -77,5 +77,4 @@ pipeline {
       echo '❌ Build and deployment succeeded!'
     }
   }
-
 }
